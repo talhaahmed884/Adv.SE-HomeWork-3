@@ -3,12 +3,8 @@ package com.cpp.homeWork3.builder;
 abstract class PreparePizza implements PizzaBuilder {
     private Pizza pizza;
 
-    public PreparePizza() {
-        this.pizza = new Pizza();
-    }
-
-    void setChainName(PizzaChainName pizzaChainName) {
-        this.pizza.setChainName(pizzaChainName);
+    public PreparePizza(PizzaChainName pizzaChainName) {
+        this.pizza = new Pizza(pizzaChainName);
     }
 
     @Override

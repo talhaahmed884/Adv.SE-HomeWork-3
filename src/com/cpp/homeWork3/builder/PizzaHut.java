@@ -2,8 +2,7 @@ package com.cpp.homeWork3.builder;
 
 public class PizzaHut extends PreparePizza {
     public PizzaHut() {
-        super();
-        this.setChainName(PizzaChainName.PIZZA_HUT);
+        super(PizzaChainName.PIZZA_HUT);
     }
 
     public Pizza prepareSmallPizzaWithTwoToppings() {
