@@ -33,6 +33,6 @@ public class NutAllergyDietPlan extends DietPlan {
     public boolean declineNutrient(Nutrient nutrient) {
         String nutrientName = nutrient.toString();
 
-        return nutrientName.equals(CarbTypes.PISTACHIO.toString()) || nutrientName.equals(FatTypes.PEANUTS.toString());
+        return nutrientName.equals(CarbsType.PISTACHIO.toString()) || nutrientName.equals(FatsType.PEANUTS.toString());
     }
 }

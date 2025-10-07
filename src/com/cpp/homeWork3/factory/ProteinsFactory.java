@@ -24,12 +24,12 @@ public class ProteinsFactory {
 
     private Nutrient getProteinsAtRandom() {
         Random random = new Random();
-        int randomInt = random.nextInt(ProteinTypes.values().length);
-        return switch (ProteinTypes.values()[randomInt]) {
-            case ProteinTypes.FISH -> new Fish();
-            case ProteinTypes.CHICKEN -> new Chicken();
-            case ProteinTypes.BEEF -> new Beef();
-            case ProteinTypes.TOFU -> new Tofu();
+        int randomInt = random.nextInt(ProteinsType.values().length);
+        return switch (ProteinsType.values()[randomInt]) {
+            case ProteinsType.FISH -> new Fish();
+            case ProteinsType.CHICKEN -> new Chicken();
+            case ProteinsType.BEEF -> new Beef();
+            case ProteinsType.TOFU -> new Tofu();
         };
     }
 }

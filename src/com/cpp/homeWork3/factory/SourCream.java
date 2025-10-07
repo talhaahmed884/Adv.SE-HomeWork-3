@@ -1,7 +1,7 @@
 package com.cpp.homeWork3.factory;
 
 public class SourCream implements Nutrient {
-    private FatTypes nutrientName;
+    private FatsType nutrientName;
 
     public SourCream() {
         this.prepare();
@@ -9,7 +9,7 @@ public class SourCream implements Nutrient {
 
     @Override
     public void prepare() {
-        this.nutrientName = FatTypes.SOUR_CREAM;
+        this.nutrientName = FatsType.SOUR_CREAM;
     }
 
     @Override

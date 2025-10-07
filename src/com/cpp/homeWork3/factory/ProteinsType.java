@@ -1,14 +1,14 @@
 package com.cpp.homeWork3.factory;
 
-public enum CarbTypes {
-    CHEESE("Cheese"),
-    BREAD("Bread"),
-    LENTILS("Lentils"),
-    PISTACHIO("Pistachio");
+public enum ProteinsType {
+    FISH("Fish"),
+    CHICKEN("Chicken"),
+    BEEF("Beef"),
+    TOFU("Tofu");
 
     private final String displayName;
 
-    CarbTypes(String displayName) {
+    ProteinsType(String displayName) {
         this.displayName = displayName;
     }
 

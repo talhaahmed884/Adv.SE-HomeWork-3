@@ -33,8 +33,8 @@ public class PaleoDietPlan extends DietPlan {
     public boolean declineNutrient(Nutrient nutrient) {
         String nutrientName = nutrient.toString();
 
-        return nutrientName.equals(CarbTypes.CHEESE.toString()) || nutrientName.equals(CarbTypes.BREAD.toString()) ||
-                nutrientName.equals(CarbTypes.LENTILS.toString()) || nutrientName.equals(ProteinTypes.TOFU.toString())
-                || nutrientName.equals(FatTypes.SOUR_CREAM.toString());
+        return nutrientName.equals(CarbsType.CHEESE.toString()) || nutrientName.equals(CarbsType.BREAD.toString()) ||
+                nutrientName.equals(CarbsType.LENTILS.toString()) || nutrientName.equals(ProteinsType.TOFU.toString())
+                || nutrientName.equals(FatsType.SOUR_CREAM.toString());
     }
 }

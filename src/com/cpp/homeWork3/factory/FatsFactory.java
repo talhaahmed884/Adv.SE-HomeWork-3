@@ -24,12 +24,12 @@ public class FatsFactory {
 
     private Nutrient getFatsAtRandom() {
         Random random = new Random();
-        int randomInt = random.nextInt(FatTypes.values().length);
-        return switch (FatTypes.values()[randomInt]) {
-            case FatTypes.AVOCADO -> new Avocado();
-            case FatTypes.SOUR_CREAM -> new SourCream();
-            case FatTypes.TUNA -> new Tuna();
-            case FatTypes.PEANUTS -> new Peanuts();
+        int randomInt = random.nextInt(FatsType.values().length);
+        return switch (FatsType.values()[randomInt]) {
+            case FatsType.AVOCADO -> new Avocado();
+            case FatsType.SOUR_CREAM -> new SourCream();
+            case FatsType.TUNA -> new Tuna();
+            case FatsType.PEANUTS -> new Peanuts();
         };
     }
 }

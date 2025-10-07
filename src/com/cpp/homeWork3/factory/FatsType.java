@@ -1,6 +1,6 @@
 package com.cpp.homeWork3.factory;
 
-public enum FatTypes {
+public enum FatsType {
     AVOCADO("Avocado"),
     SOUR_CREAM("Source Cream"),
     TUNA("Tuna"),
@@ -8,7 +8,7 @@ public enum FatTypes {
 
     private final String displayName;
 
-    FatTypes(String displayName) {
+    FatsType(String displayName) {
         this.displayName = displayName;
     }
 

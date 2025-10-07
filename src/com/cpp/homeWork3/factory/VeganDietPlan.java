@@ -33,9 +33,9 @@ public class VeganDietPlan extends DietPlan {
     public boolean declineNutrient(Nutrient nutrient) {
         String nutrientName = nutrient.toString();
 
-        return nutrientName.equals(CarbTypes.CHEESE.toString()) || nutrientName.equals(FatTypes.SOUR_CREAM.toString())
-                || nutrientName.equals(ProteinTypes.FISH.toString()) ||
-                nutrientName.equals(ProteinTypes.CHICKEN.toString()) ||
-                nutrientName.equals(ProteinTypes.BEEF.toString()) || nutrientName.equals(FatTypes.TUNA.toString());
+        return nutrientName.equals(CarbsType.CHEESE.toString()) || nutrientName.equals(FatsType.SOUR_CREAM.toString())
+                || nutrientName.equals(ProteinsType.FISH.toString()) ||
+                nutrientName.equals(ProteinsType.CHICKEN.toString()) ||
+                nutrientName.equals(ProteinsType.BEEF.toString()) || nutrientName.equals(FatsType.TUNA.toString());
     }
 }

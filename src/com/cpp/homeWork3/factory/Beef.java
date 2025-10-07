@@ -1,7 +1,7 @@
 package com.cpp.homeWork3.factory;
 
 public class Beef implements Nutrient {
-    private ProteinTypes nutrientName;
+    private ProteinsType nutrientName;
 
     public Beef() {
         this.prepare();
@@ -9,7 +9,7 @@ public class Beef implements Nutrient {
 
     @Override
     public void prepare() {
-        this.nutrientName = ProteinTypes.BEEF;
+        this.nutrientName = ProteinsType.BEEF;
     }
 
     @Override
